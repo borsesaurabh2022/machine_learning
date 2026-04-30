@@ -39,3 +39,23 @@ What we did:
 - Fine-tuned the Random Forest model using GridSearchCV
 - Analyzed feature importances to understand which attributes mattered most
 - Evaluated the final model on the test set
+
+---
+
+## Chapter 2 - MNIST Digit Classification
+
+A classification project using the MNIST dataset to identify handwritten digits, covering binary and multiclass classification along with key evaluation techniques.
+
+Brief steps followed during the learning phase:
+
+- Loaded the MNIST dataset (70,000 images, 28x28 pixels each) using fetch_openml
+- Explored the data structure and visualized sample digit images
+- Split the data into 60,000 training and 10,000 test samples
+- Built a binary classifier using SGDClassifier to detect the digit 5
+- Measured accuracy using cross-validation and understood why accuracy alone is misleading for imbalanced datasets
+- Computed a confusion matrix to see true vs predicted classifications
+- Calculated precision, recall, and F1 score to properly evaluate the classifier
+- Explored the precision-recall tradeoff by adjusting the decision threshold
+- Plotted the ROC curve and computed the AUC score to compare classifiers
+- Extended to multiclass classification using SVM with the OvO strategy and SGDClassifier
+- Performed error analysis using a normalized confusion matrix to spot which digits the model confuses most
