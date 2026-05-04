@@ -59,3 +59,24 @@ Brief steps followed during the learning phase:
 - Plotted the ROC curve and computed the AUC score to compare classifiers
 - Extended to multiclass classification using SVM with the OvO strategy and SGDClassifier
 - Performed error analysis using a normalized confusion matrix to spot which digits the model confuses most
+
+---
+
+## Chapter 3 - Training Models
+
+A deep dive into how machine learning models are actually trained under the hood, covering linear regression, gradient descent variants, regularization techniques, and logistic regression.
+
+What we did:
+
+- Generated synthetic data and fit a Linear Regression model using the Normal Equation
+- Understood how the Normal Equation computes optimal parameters directly without iterating
+- Implemented Batch Gradient Descent from scratch and experimented with different learning rates
+- Implemented Stochastic Gradient Descent and Mini-batch Gradient Descent and compared their behavior
+- Plotted learning curves to diagnose underfitting and overfitting
+- Used Polynomial Regression to fit non-linear data and observed how model complexity affects the bias-variance tradeoff
+- Applied Ridge Regression (L2) to penalize large weights and reduce overfitting
+- Applied Lasso Regression (L1) and observed how it drives less useful feature weights to zero
+- Used Elastic Net as a balance between Ridge and Lasso regularization
+- Implemented Early Stopping to halt training when validation error stops improving
+- Built a Logistic Regression model for binary classification and understood the sigmoid function
+- Extended to Softmax Regression for multiclass classification using the cross-entropy loss
